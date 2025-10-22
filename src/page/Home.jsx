@@ -1,7 +1,6 @@
 import { ShoppingCart } from "lucide-react";
 import { Link } from "react-router-dom";
 
-
 const products = [
   {
     id: 1,
@@ -74,7 +73,7 @@ const Home = () => {
         <ul className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-8">
           {categories.map((cat) => (
             <li
-              key={cat.id}
+              key={cat.name}
               className="relative rounded-2xl overflow-hidden group cursor-pointer shadow-md hover:shadow-xl transition"
             >
               <img
