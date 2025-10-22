@@ -1,6 +1,7 @@
 import { ShoppingCart } from "lucide-react";
 import { Link } from "react-router-dom";
 
+
 const products = [
   {
     id: 1,
@@ -70,9 +71,9 @@ const Home = () => {
         <h2 className="text-3xl font-semibold text-center mb-10">
           Shop by Category
         </h2>
-        <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-8">
+        <ul className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-8">
           {categories.map((cat) => (
-            <div
+            <li
               key={cat.id}
               className="relative rounded-2xl overflow-hidden group cursor-pointer shadow-md hover:shadow-xl transition"
             >
@@ -86,9 +87,9 @@ const Home = () => {
                   {cat.name}
                 </h3>
               </div>
-            </div>
+            </li>
           ))}
-        </div>
+        </ul>
       </section>
 
       {/* Featured Products Section */}
