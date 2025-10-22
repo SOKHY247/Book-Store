@@ -1,5 +1,3 @@
-"use client";
-
 import React, { useContext } from "react";
 import ProductContext from "@/context/ProductContext";
 import { ShoppingCart } from "lucide-react";
@@ -12,9 +10,11 @@ import {
   CardFooter,
 } from "@/components/ui/card";
 import { Button } from "@/components/ui/button";
+import CartContext from "@/context/CartContext";
 
 const Product = () => {
   const { products } = useContext(ProductContext);
+  const { addToCart } = useContext(CartContext);
 
   return (
     <div className="max-w-7xl mx-auto py-10 px-4 space-y-8">
@@ -62,6 +62,7 @@ const Product = () => {
               <Button
                 variant="default"
                 size="sm"
+                onClick={() => addToCart(product.id)}
                 className="w-full flex items-center gap-2 cursor-pointer"
               >
                 <ShoppingCart className="w-4 h-4" />

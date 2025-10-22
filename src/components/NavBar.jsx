@@ -35,7 +35,7 @@ const NavBar = () => {
             alt="Profile"
             className="hidden lg:block rounded-full w-10 h-10 object-cover"
           />
-          <button className="hidden lg:block" onClick={toggleTheme}>
+          <button className="hidden lg:block cursor-pointer" onClick={toggleTheme}>
             {theme == "dark" ? <Sun /> : <Moon />}
           </button>
           <Link to="/cart" className="hidden lg:block">
