@@ -7,7 +7,7 @@ import ThemeContext from "@/context/ThemeContext";
 import { Moon, Sun } from "lucide-react";
 
 const NavBar = () => {
-  
+
   const { theme, toggleTheme } = useContext(ThemeContext);
 
   return (

@@ -10,6 +10,7 @@ import { CartProvider } from "./context/CartContext";
 createRoot(document.getElementById("root")).render(
   <StrictMode>
     <BrowserRouter>
+
       <ProductProvider>
         <CartProvider>
           <ThemeProvider>
@@ -17,6 +18,7 @@ createRoot(document.getElementById("root")).render(
           </ThemeProvider>
         </CartProvider>
       </ProductProvider>
+      
     </BrowserRouter>
   </StrictMode>
 );
