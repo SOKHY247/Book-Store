@@ -1,6 +1,8 @@
 import React, { useContext } from "react";
 import ProductContext from "@/context/ProductContext";
 import { ShoppingCart } from "lucide-react";
+import OrderDetails from "./OrderDetail";
+import { Link } from "react-router-dom";
 import {
   Card,
   CardHeader,
@@ -17,10 +19,37 @@ const Product = () => {
   const { addToCart } = useContext(CartContext);
 
   return (
-    <div className="max-w-7xl mx-auto py-10 px-4 space-y-8">
+    <div className="max-w-7xl mx-auto py-10 px-4 space-y-8 mt-5">
       <h1 className="text-3xl font-semibold tracking-tight">Products</h1>
 
-      <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-4 md:gap-6">
+       
+
+ <Link to="/about">
+      <button class="bg-transparent hover:bg-blue-500 text-blue-700 font-semibold hover:text-white py-2 px-4 border border-blue-500 hover:border-transparent rounded">
+       Book
+      </button>
+    </Link>
+
+     <Link to="/about">
+      <button class="bg-transparent hover:bg-blue-500 text-blue-700 font-semibold hover:text-white py-2 px-4 border border-blue-500 hover:border-transparent rounded">
+       Book for kinds
+      </button>
+    </Link>
+
+     <Link to="/orderdetails">
+      <button class="bg-transparent hover:bg-blue-500 text-blue-700 font-semibold hover:text-white py-2 px-4 border border-blue-500 hover:border-transparent rounded">
+       Orderdetail
+      </button>
+    </Link>
+
+     <Link to="/orderhistory">
+      <button class="bg-transparent hover:bg-blue-500 text-blue-700 font-semibold hover:text-white py-2 px-4 border border-blue-500 hover:border-transparent rounded">
+       Order History
+      </button>
+    </Link>
+
+
+      <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-4 md:gap-6 mt-4">
         {products.map((product, index) => (
           <Card
             className="overflow-hidden transition hover:shadow-lg p-0 pb-6"

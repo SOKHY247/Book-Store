@@ -1,19 +1,25 @@
 import { useContext } from "react";
 import CartContext from "@/context/CartContext";
 
+
+
+
 const Cart = () => {
   const { cart, removeFromCart, getTotal } = useContext(CartContext);
-
+ 
   if (cart.length === 0) {
     return (
-      <p className="text-center py-12 font-semibold text-xl">
+      
+      <p className="text-center py-12 font-semibold text-xl mt-5">
         Your cart is empty.
       </p>
     );
   }
 
   return (
-    <div className="max-w-7xl mx-auto p-4">
+    
+    <div className="max-w-7xl mx-auto p-4 mt-10">
+       <h1 className="text-3xl font-semibold tracking-tight text-center">Order Total : </h1>
       <div className="overflow-x-auto">
         <table className="w-full text-left border-collapse border border-gray-300 dark:border-gray-700">
           <thead className="bg-gray-200 dark:bg-gray-800">

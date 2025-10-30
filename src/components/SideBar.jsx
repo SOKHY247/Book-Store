@@ -31,6 +31,7 @@ const SideBar = () => {
             <Link to="/">Home</Link>
             <Link to="/about">About</Link>
             <Link to="/product">Product</Link>
+            <Link to="/contact">Contact</Link>
           </SheetDescription>
 
           <SheetFooter>theme</SheetFooter>
