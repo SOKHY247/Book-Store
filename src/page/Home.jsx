@@ -13,7 +13,7 @@ const Home = () => {
   // 🧩 Carousel logic must be inside the component
   const slides = [
    "https://i.ytimg.com/vi/OXaga3JVdR8/hq720.jpg?sqp=-oaymwEhCK4FEIIDSFryq4qpAxMIARUAAAAAGAElAADIQj0AgKJD&rs=AOn4CLA3gZ1Ckwiv5EOcfyfAO8p9b56x_w",
-    "https://i.ytimg.com/vi/PLTqqi8nDJY/hq720.jpg?sqp=-oaymwEhCK4FEIIDSFryq4qpAxMIARUAAAAAGAElAADIQj0AgKJD&rs=AOn4CLAK6a1lzh6yXYaQw7Bvy7RXKHZY-g",
+    "https://substackcdn.com/image/fetch/$s_!3r1T!,f_auto,q_auto:good,fl_progressive:steep/https%3A%2F%2Fsubstack-post-media.s3.amazonaws.com%2Fpublic%2Fimages%2Faf71eaf8-a0c2-490b-839e-4c927e6097a6_787x609.png",
     "https://png.pngtree.com/thumb_back/fh260/background/20250801/pngtree-literary-bloom-an-open-book-in-a-meadow-with-daisies-and-image_17671404.webp",
     "https://media.licdn.com/dms/image/v2/D4D12AQGaeZwKxSukNA/article-cover_image-shrink_720_1280/article-cover_image-shrink_720_1280/0/1716326374277?e=2147483647&v=beta&t=QrETvsuPc-vm9Fbry51m_jT86NV_5EXTfq0Qqie8MTY",
     "https://thedayspring.com.pk/wp-content/uploads/2022/10/The-7-Habits-of-Highly-Effective-Teens-Book-Reviewy.jpg",
@@ -147,50 +147,38 @@ const Home = () => {
 
   
   // Move MV
-  const movies = [
+  const books = [
   {
     title: "Who is your Room",
-    year: 2023,
-    genre: "Sci-Fi",
     rating: 8.2,
     poster:
       "https://content-asset.phsar121.com/products/2ZkjOjQAa3O8UmWG1DaLYBMNQuYSqb7ZBT01AF2Z.png",
   },
   {
     title: "The Mindset",
-    year: 2021,
-    genre: "Drama",
     rating: 7.5,
     poster: "https://static.wixstatic.com/media/2d0426_633ff342983d432bb09525525cbfc7d9~mv2.jpg/v1/fill/w_568,h_568,al_c,q_80,usm_0.66_1.00_0.01,enc_avif,quality_auto/2d0426_633ff342983d432bb09525525cbfc7d9~mv2.jpg",
   },
   {
     title: "The miracle morning book",
-    year: 2024,
-    genre: "Cyberpunk Thriller",
     rating: 8.0,
     poster:
       "https://indiebusinessnetwork.com/wp-content/uploads/2020/12/IBB-1-2021-miracle-morning.jpg",
   },
   {
     title: "How to stop worrying and start living",
-    year: 2020,
-    genre: "Adventure",
     rating: 7.3,
     poster:
       "https://is1-ssl.mzstatic.com/image/thumb/Publication211/v4/df/a6/a9/dfa6a906-f690-9619-c29d-a746a0710ecc/9781451621723.jpg/1200x900wz.jpg",
   },
   {
     title: "Mua The Magic",
-    year: 2022,
-    genre: "Fantasy",
     rating: 8.6,
     poster:
       "https://salt.tikicdn.com/cache/280x280/ts/product/11/a5/0e/3a6e85034d7a76b5bb6c5da2a98bb370.jpg",
   },
   {
     title: "Learning how to learn",
-    year: 2019,
-    genre: "Action",
     rating: 7.8,
     poster: "https://www.static-src.com/wcsstore/Indraprastha/images/catalog/full//catalog-image/94/MTA-143552272/bentang_pustaka_buku_learning_how_to_learn_-_barbara-_ph-d_full01_k6vaqaav.jpg",
   },
@@ -198,55 +186,118 @@ const Home = () => {
 
 const image = [
   {
-    src: "https://img.freepik.com/premium-photo/concept-product-categories-clothing-accessories-white-background_268321-4577.jpg",
+    src: "https://media.licdn.com/dms/image/v2/D5622AQHusBkEse9kMA/feedshare-shrink_800/B56ZQGquXDGQAg-/0/1735278674138?e=2147483647&v=beta&t=GQGZIxTs72-XyEz6-tCySFbJVyj3msiz1Zy0kfww9e4",
     alt: "Cinque Terre",
     rating: 8.0,
-    desc: "Add a description of the image here",
+    desc: "Book the best for read in 2025",
   },
   {
-    src: "https://img.freepik.com/premium-photo/concept-product-categories-clothing-accessories-white-background_268321-4577.jpg",
+    src: "https://shereads.com/wp-content/uploads/2024/12/Traci-Thomas-Most-Anticipated-2025.jpg",
     alt: "Forest",
-    desc: "Add a description of the image here",
+    desc: "Traci Thomas’ Most Anticipated Books of 2025",
   },
   {
-    src: "https://img.freepik.com/premium-photo/concept-product-categories-clothing-accessories-white-background_268321-4577.jpg",
+    src: "https://media.licdn.com/dms/image/v2/D4E12AQHh5ajchZJ3Nw/article-cover_image-shrink_720_1280/article-cover_image-shrink_720_1280/0/1734315847146?e=2147483647&v=beta&t=ev63QjslUSw1De0wGW1XVc9IG5Y3U4kV3zauH5VO8IQ",
     alt: "Northern Lights",
-    desc: "Add a description of the image here",
+    desc: "21 Best Entrepreneurial Books To Read In 2025",
   },
   {
-    src: "https://img.freepik.com/premium-photo/concept-product-categories-clothing-accessories-white-background_268321-4577.jpg",
+    src: "https://media.licdn.com/dms/image/v2/D5612AQFurTwlrRS5nw/article-cover_image-shrink_720_1280/article-cover_image-shrink_720_1280/0/1725868840393?e=2147483647&v=beta&t=tEmwEL29ARXFg45oG248zbvTv2OAfxDnl-GdHz_sNAI",
     alt: "Mountains",
-    desc: "Add a description of the image here",
+    desc: "The book best for programming language",
   },
 ];
 
 const works = [
   {
     id: 1,
-    src: "https://indiebusinessnetwork.com/wp-content/uploads/2020/12/IBB-1-2021-miracle-morning.jpg",
-    alt: "Mountains",
-    title: "My Work",
-    desc: "Lorem ipsum..",
+    src: "https://www.bookmarked.id/cdn/shop/files/FollowYourHeartNEW_1024x.jpg?v=1718024604",
+    alt: "Andrew",
+    title: "Follow your heart",
+    desc: "Find a meaning your life",
   },
   {
     src: "https://indiebusinessnetwork.com/wp-content/uploads/2020/12/IBB-1-2021-miracle-morning.jpg",
     alt: "Lights",
-    title: "My Work",
-    desc: "Lorem ipsum..",
+    title: "The Miracle Morning",
+    desc: "How to improve your day with a 'miraculous' morning routine",
   },
   {
-    src: "https://indiebusinessnetwork.com/wp-content/uploads/2020/12/IBB-1-2021-miracle-morning.jpg",
-    alt: "Nature",
-    title: "My Work",
-    desc: "Lorem ipsum..",
+    src: "https://static.wixstatic.com/media/2d0426_633ff342983d432bb09525525cbfc7d9~mv2.jpg/v1/fill/w_568,h_568,al_c,q_80,usm_0.66_1.00_0.01,enc_avif,quality_auto/2d0426_633ff342983d432bb09525525cbfc7d9~mv2.jpg",
+    alt: "Carol Dweck",
+    title: "Mindset",
+    desc: "Changing the Way You Think to Fulfil Your Potential ",
   },
   {
-    src: "https://indiebusinessnetwork.com/wp-content/uploads/2020/12/IBB-1-2021-miracle-morning.jpg",
+    src: "https://is1-ssl.mzstatic.com/image/thumb/Music114/v4/9c/b0/92/9cb092a5-fa34-dcbb-716e-2e6f2a333222/rm_image.jpg/1200x900wf.jpg",
     alt: "Mountains",
-    title: "My Work",
-    desc: "Lorem ipsum..",
+    title: "Who is your room",
+    desc: " The Secret to Creating Your Best Life ",
   },
 ];
+
+
+const features = [
+  {
+    icon: "💻",
+    title: "Fully Responsive",
+    desc: "This theme will look great on any device, no matter the size!",
+  },
+  {
+    icon: "⚙️",
+    title: "Bootstrap 5 Ready",
+    desc: "Featuring the latest build of the new Bootstrap 5 framework!",
+  },
+  {
+    icon: "🧠",
+    title: "Easy to Use",
+    desc: "Ready to use with your own content, or customize the source files!",
+  },
+];
+
+// Showcase Data
+const showcases = [
+  {
+    title: "Ikigai",
+    desc: "Many books have been published about the Japanese concept of ikigai, or a reason for being, which describes the intersection of what you love, what you're good at, what the world needs, and what you can be paid for.",
+    img: "https://i.pinimg.com/736x/01/e0/d8/01e0d8e0951538343c48ebda379ccefe.jpg",
+    reverse: true,
+  },
+  {
+    title: "Follow your heart",
+    desc: "It is about doing what you love, dealing with bills and disasters, discovering your own power, and finding peace of mind. Start down the road to changing your life because as Matthews says: Our mission in life is not to change the world--our mission is to change ourselves.",
+    img: "https://my-test-11.slatic.net/p/2ace89c6d1a1d1f9c0fb0cd957d246b4.jpg",
+    reverse: false,
+  },
+  {
+    title: "How to Stop worrying and start living",
+    desc: "ts a classic book that must be read if you are in depression and want to come out of it. Carnegie wrote this book into eight parts. PART I: Fundamental facts you should know about worry. Often we worry because we take the burden of both the past and the future with us today.",
+    img: "https://is1-ssl.mzstatic.com/image/thumb/Publication211/v4/df/a6/a9/dfa6a906-f690-9619-c29d-a746a0710ecc/9781451621723.jpg/1200x900wz.jpg",
+    reverse: true,
+  },
+];
+
+// Testimonials Data
+const testimonials = [
+  {
+    name: "Margaret E.",
+    quote: "Follow Your Heart: Finding Purpose in Your Life and Work!",
+    img: "https://startbootstrap.github.io/startbootstrap-landing-page/assets/img/testimonials-1.jpg",
+  },
+  {
+    name: "Fred S.",
+    quote:
+      "Mindset : It is a worthwhile investment for individuals seeking personal and professional growth, as it provides a roadmap for developing a growth mindset and achieving long-term success.",
+    img: "https://startbootstrap.github.io/startbootstrap-landing-page/assets/img/testimonials-2.jpg",
+  },
+  {
+    name: "Sarah W.",
+    quote:
+      "Who's your room :  It helps you take control of your life by identifying who you want to keep in your room, and how to manage their influence and prevent unwanted people from entering.",
+    img: "https://startbootstrap.github.io/startbootstrap-landing-page/assets/img/testimonials-3.jpg",
+  },
+];
+
  return (
     <div className="min-h-screen bg-background text-foreground transition-colors">
       {/* 🖼️ Carousel Section */}
@@ -318,11 +369,13 @@ const works = [
             key={index}
             className="bg-white rounded-2xl shadow-md overflow-hidden hover:shadow-lg transition-shadow duration-300"
           >
+            <Link to="/product">
             <img
               src={item.src}
               alt={item.alt}
               className="w-full h-48 object-cover hover:scale-105 transition-transform duration-300"
             />
+            </Link>
             <div className="p-4">
               <h3 className="text-lg font-semibold text-gray-800 mb-2">
                 {item.title}
@@ -343,12 +396,20 @@ const works = [
           Discover the latest trends in fashion and express yourself with our
           exclusive clothing collections.
         </p>
+        <div className="grid gap-2">
         <Link
           to="/product"
           className="bg-primary text-primary-foreground px-6 py-3 rounded-full text-lg font-semibold hover:bg-primary/80 transition"
         >
           Shop Now
         </Link>
+        <Link
+          to="/SignUp"
+          className="bg-primary text-primary-foreground px-6 py-3 rounded-full text-lg font-semibold hover:bg-primary/80 transition"
+        >
+          Register Now
+        </Link>
+        </div>
       </section>
       {/* Image sild */}
       <div className="p-6 bg-gray-50 ">
@@ -358,13 +419,13 @@ const works = [
             key={index}
             className="rounded-2xl overflow-hidden shadow-md bg-white hover:shadow-lg transition-shadow"
           >
-            <a href={img.src} target="_blank" rel="noopener noreferrer">
+            
               <img
                 src={img.src}
                 alt={img.alt}
                 className="w-full h-48 object-cover hover:scale-105 transition-transform duration-300"
               />
-            </a>
+            
             <div className="p-3 text-center text-gray-700 text-sm">
               {img.desc}
             </div>
@@ -402,7 +463,6 @@ const works = [
      
       {/* Movies Section */}
       <section className="p-4 lg:p-8 space-y-6">
-        <h1 className="text-4xl font-semibold">Action</h1>
 
           {/* Hero Section */}
       {/* <section className="pt-16">
@@ -416,25 +476,21 @@ const works = [
       <Bestsellers/>
       
       
-
+           <h1 className="text-4xl font-semibold">Popular book</h1>
         <ul className="grid grid-cols-2 md:grid-cols-4 lg:grid-cols-6 gap-4 lg:gap-8">
-          {movies.map((movie, index) => (
+          {books.map((book, index) => (
             <li
               key={index}
               className="bg-blue-100 rounded-lg overflow-hidden shadow-sm hover:shadow-lg transition-shadow duration-250"
             >
               <img
-                src={movie.poster}
-                alt={movie.title}
+                src={book.poster}
+                alt={book.title}
                 className="h-80 w-full object-cover"
               />
               <article className="p-2 space-y-4">
-                <h2 className="font-semibold text-xl">{movie.title}</h2>
-                <div className="flex justify-between text-sm text-gray-700">
-                  <p>{movie.year}</p>
-                  <p>{movie.genre}</p>
-                </div>
-                <p>⭐ {movie.rating}</p>
+                <h2 className="font-semibold text-xl">{book.title}</h2>
+                <p className="">⭐ {book.rating}</p>
               </article>
             </li>
           ))}
@@ -442,19 +498,19 @@ const works = [
       </section>
 
         {/* Hero Section */}
-      <section className="pt-16">
+      {/* <section className="pt-16">
         <img
           src="https://i.cdn.newsbytesapp.com/images/l70420220408162006.jpeg"
           alt="Hero"
           className="w-full h-[30px] md:h-[250px] lg:h-[250px] object-cover object-top
           rounded-[10px] p-8"
         />
-      </section>
+      </section> */}
 
       {/* Featured Products Section */}
       <section className="max-w-7xl mx-auto px-6 py-16 bg-muted/30">
-        <h2 className="text-3xl font-semibold text-center mb-10">
-          Featured Products
+        {/* <h2 className="text-3xl font-semibold text-center mb-10">
+          Related products
         </h2>
         <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-4">
           {products.map((product) => (
@@ -472,12 +528,96 @@ const works = [
                 <p className="text-muted-foreground mb-4">{product.price}</p>
                 <button className="flex justify-center items-center gap-4 bg-primary text-primary-foreground px-4 py-2 rounded-lg w-full hover:bg-primary/80 transition">
                   <ShoppingCart />
-                  <span>Add to Cart</span>
+                  <Link to="/product">
+                  <span >Add to Cart</span>
+                  </Link>
                 </button>
               </div>
             </div>
           ))}
+        </div> */}
+
+        <Bestsellers/>
+ 
+        <section className="py-16 bg-gray-100 text-center">
+          <h1 className="text-4xl font-semibold p-10">Top books </h1>
+        <div className="max-w-6xl mx-auto px-6">
+          <div className="grid md:grid-cols-3 gap-8">
+            {features.map((f, index) => (
+              <div key={index} className="bg-white p-6 rounded-xl shadow-sm">
+                <div className="text-5xl mb-4">{f.icon}</div>
+                <h3 className="text-xl font-semibold mb-2 text-gray-800">
+                  {f.title}
+                </h3>
+                <p className="text-gray-600">{f.desc}</p>
+              </div>
+            ))}
+          </div>
         </div>
+      </section>
+
+      
+
+      {/* ================= IMAGE SHOWCASE SECTION ================= */}
+      <section className="w-full">
+  <h1 className="text-4xl font-semibold p-10 text-center">
+    Deals of the Week
+  </h1>
+
+  {showcases.map((item, index) => (
+    <div
+      key={index}
+      className={`flex flex-col ${
+        item.reverse ? "md:flex-row-reverse" : "md:flex-row"
+      }`}
+    >
+      {/* Image Section */}
+      <div className="relative w-full md:w-1/2 h-[400px] md:h-[500px] overflow-hidden">
+        <img
+          src={item.img}
+          alt={item.title}
+          className="absolute inset-0 w-full h-full object-cover"
+        />
+      </div>
+
+      {/* Text Section */}
+      <div className="w-full md:w-1/2 flex items-center justify-center bg-white">
+        <div className="p-10 md:p-16 text-center md:text-left">
+          <h2 className="text-2xl font-bold mb-4 text-gray-800">
+            {item.title}
+          </h2>
+          <p className="text-gray-600">{item.desc}</p>
+        </div>
+      </div>
+    </div>
+  ))}
+</section>
+
+
+      {/* ================= TESTIMONIALS SECTION ================= */}
+      <section className="py-16 bg-gray-100 text-center">
+        <div className="max-w-6xl mx-auto px-6">
+          <h2 className="text-3xl font-bold mb-12 text-gray-800">
+            What people are saying about book read...
+          </h2>
+
+          <div className="grid md:grid-cols-3 gap-10">
+            {testimonials.map((t, index) => (
+              <div key={index} className="flex flex-col items-center">
+                <img
+                  src={t.img}
+                  alt={t.name}
+                  className="w-24 h-24 rounded-full mb-4"
+                />
+                <h5 className="text-lg font-semibold mb-2 text-gray-800">
+                  {t.name}
+                </h5>
+                <p className="text-gray-600 italic">"{t.quote}"</p>
+              </div>
+            ))}
+          </div>
+        </div>
+      </section>
       </section>
    
       {/* <div className="grid gap-4">
@@ -500,9 +640,9 @@ const works = [
 
       {/* Newsletter Section */}
       <section className="px-6 py-20 text-center">
-        <h2 className="text-3xl font-semibold mb-4">Join Our Newsletter</h2>
+        <h2 className="text-3xl font-semibold mb-4">Join Our MybookShop</h2>
         <p className="text-muted-foreground mb-8">
-          Get exclusive offers, styling tips, and more straight to your inbox.
+          Signup to be the first to hear about exclusive deals, special offers and upcoming collections.
         </p>
         <div className="flex flex-col sm:flex-row justify-center items-center gap-4 max-w-lg mx-auto">
           <input
@@ -518,7 +658,7 @@ const works = [
 
       {/* Footer */}
       <footer className="py-8 border-t border-border text-center text-sm text-muted-foreground">
-        © {new Date().getFullYear()} StyleHaus. All rights reserved.
+        © {new Date().getFullYear()} MybookShop. All rights reserved.
       </footer>
     </div>
   );

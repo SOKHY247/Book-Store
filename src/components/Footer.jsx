@@ -15,6 +15,7 @@ const Footer = () => {
     { label: "Home", link: "/" },
     { label: "About", link: "/about" },
     { label: "Product", link: "/product" },
+    { label: "Contact Us", link: "/contacts" },
   ];
 
   const contacts = [
@@ -27,9 +28,9 @@ const Footer = () => {
     <footer className="bg-gray-900 text-gray-300 mt-10">
       {/* Layer 1: Brand and tagline */}
       <div className="border-b border-gray-700 py-8 text-center">
-        <h2 className="text-3xl font-bold text-white">StyleHub</h2>
+        <h2 className="text-3xl font-bold text-white">MybookShop</h2>
         <p className="text-gray-400 mt-2 text-sm">
-          Fashion for every season. Trendy. Affordable. Sustainable.
+          enhances cognitive abilities like memory, concentration, and critical thinking, while also improving vocabulary and writing skills.
         </p>
       </div>
 
@@ -64,10 +65,10 @@ const Footer = () => {
         {/* Column 3: Newsletter */}
         <div>
           <h3 className="text-lg font-semibold text-white mb-4">
-            Join Our Newsletter
+            Join Our MybookShop
           </h3>
           <p className="text-sm text-gray-400 mb-3">
-            Get the latest updates on new arrivals and exclusive discounts.
+            Signup to be the first to hear about exclusive deals, special offers and upcoming collections..
           </p>
           <form className="flex">
             <Input
@@ -88,7 +89,7 @@ const Footer = () => {
       {/* Layer 3: Social icons and copyright */}
       <div className="border-t border-gray-700 py-4 flex flex-col md:flex-row items-center justify-between px-6 md:px-16 text-sm">
         <p className="text-gray-400 text-center md:text-left">
-          © {new Date().getFullYear()} StyleHub. All rights reserved.
+          © {new Date().getFullYear()} MybookShop. All rights reserved.
         </p>
         <div className="flex gap-4 mt-3 md:mt-0">
           <a href="#" className="hover:text-white">

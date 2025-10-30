@@ -69,7 +69,7 @@ export default function Bestsellers() {
     <div className="relative max-w-7xl mx-auto px-4 py-8">
       {/* Header */}
       <div className="flex justify-between items-center mb-4">
-        <h2 className="text-2xl font-serif italic">Bestsellers</h2>
+        <h2 className="text-2xl font-serif italic">Related book</h2>
         <a href="#" className="text-sm text-blue-600 hover:underline">
           See All
         </a>
