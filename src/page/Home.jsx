@@ -240,13 +240,13 @@ const works = [
 const features = [
   {
     icon: "💻",
-    title: "Fully Responsive",
-    desc: "This theme will look great on any device, no matter the size!",
+    title: "Wide Selection",
+    desc: "Discover books for every reader! From bestsellers to hidden gems, our collection has something for everyone.",
   },
   {
     icon: "⚙️",
-    title: "Bootstrap 5 Ready",
-    desc: "Featuring the latest build of the new Bootstrap 5 framework!",
+    title: "Curated & Updated",
+    desc: "We constantly update our inventory to feature the latest releases and timeless classics for all ages.",
   },
   {
     icon: "🧠",
@@ -393,8 +393,7 @@ const testimonials = [
           Welcome to MyBook store 
         </h1>
         <p className="text-lg md:text-xl text-muted-foreground max-w-2xl mb-6">
-          Discover the latest trends in fashion and express yourself with our
-          exclusive clothing collections.
+          Discover books for every reader! From bestsellers to hidden gems, our collection has something for everyone.
         </p>
         <div className="grid gap-2">
         <Link
@@ -540,7 +539,7 @@ const testimonials = [
         <Bestsellers/>
  
         <section className="py-16 bg-gray-100 text-center">
-          <h1 className="text-4xl font-semibold p-10">Top books </h1>
+          <h1 className="text-4xl font-semibold p-10">Our Mybookstore </h1>
         <div className="max-w-6xl mx-auto px-6">
           <div className="grid md:grid-cols-3 gap-8">
             {features.map((f, index) => (

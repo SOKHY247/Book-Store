@@ -1,55 +1,56 @@
 import { useRef } from "react";
 import { FaChevronLeft, FaChevronRight } from "react-icons/fa";
+import { Link } from "react-router-dom";
 
 const books = [
   {
-    title: "107 Days",
-    author: "Kamala Harris",
+    title: "Rich dad poor dad ",
+    author: "Robert T. Kiyosaki (with Sharon Lechter)",
     image: "https://is1-ssl.mzstatic.com/image/thumb/Publication2/v4/db/fa/f8/dbfaf8df-3a6c-a99a-7169-7c912b775cf0/9781612680187-frontcover.jpg/1200x630wz.png",
   },
   {
-    title: "The Mad Wife: A Novel",
-    author: "Meagan Church",
+    title: "The Power",
+    author: "Rhonda Byrne",
     image: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT2Pav7fX4GDJnmU_6wVlTvi4iuOlIIWaBsruiQDGyfyrBLFkIce8zQ4mOx9P6GcyIstu4&usqp=CAU",
   },
   {
-    title: "The Let Them Theory",
-    author: "Mel Robbins",
+    title: "Steal like an Artist",
+    author: "Austin Kleon",
     image: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTclyN5Ad43HlpXgLHezyXn9Flxh4KtPxo0-ZTCKQFn42vTIhYeukaFBvvVtkSkN1AdbGg&usqp=CAU",
   },
   {
-    title: "Partypooper (Diary of a Wimpy Kid)",
-    author: "Jeff Kinney",
+    title: "Atomic Habit",
+    author: "James Clear",
     image: "https://is1-ssl.mzstatic.com/image/thumb/Publication221/v4/0f/a8/21/0fa82145-ed72-d49a-08cf-072ed1aa21c2/9781473537804.jpg/1200x675wz.jpg",
   },
   {
-    title: "The Intruder",
-    author: "Freida McFadden",
+    title: "The 7 habit of hight effectively teens ",
+    author: "Sean Covey",
     image: "https://m.media-amazon.com/images/I/81hZc4eq1nL.jpg_BO30,255,255,255_UF900,850_SR1910,1000,0,C_QL100_.jpg",
   },
   {
-    title: "1929: Inside the Greatest Crash",
-    author: "Andrew Ross Sorkin",
+    title: "The one think",
+    author: "Napoleon Hill",
     image: "https://static-ppimages.freetls.fastly.net/nielsens/9781848549258.jpg?canvas=600,600&fit=bounds&height=600&mode=max&width=600&404=default.jpg",
   },
   {
-    title: "The Widow: A Novel",
+    title: "Think Grow rich",
     author: "John Grisham",
     image: "https://www.bookishadda.com/cdn/shop/files/287_8930d77f-0791-4ffe-86d6-1c2443dcce2e.png?v=1743593567&width=1946",
   },
   {
-    title: "The Widow: A Novel",
-    author: "John Grisham",
+    title: "Ikigai",
+    author: "Héctor García & Francesc Miralles",
     image: "https://cdn.shopify.com/s/files/1/1163/9680/products/Ikigai_Book.jpg?v=1536585232",
   },
   {
-    title: "The Widow: A Novel",
-    author: "John Grisham",
+    title: "Psychology of money",
+    author: "Morgan Housel",
     image: "https://whatsinyourstory.com/wp-content/uploads/2023/06/WhatsApp-Image-2023-09-08-at-4.17.03-PM.jpeg",
   },
   {
-    title: "The Widow: A Novel",
-    author: "John Grisham",
+    title: "Deep work",
+    author: "Cal Newport",
     image: "https://rose.ph/wp-content/uploads/2021/08/Deep-Work-cover-min.jpg",
   },
 ];
@@ -104,9 +105,11 @@ export default function Bestsellers() {
               <p className="text-xs text-blue-700 hover:underline">
                 {book.author}
               </p>
+              <Link to="/product">
               <button className="mt-2 border border-blue-600 text-blue-600 text-xs font-semibold py-1 px-3 rounded hover:bg-blue-50">
-                QUICK ADD
+                Go to product
               </button>
+              </Link>
             </div>
           ))}
         </div>

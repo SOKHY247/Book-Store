@@ -37,7 +37,7 @@ const OrderDetail = () => {
       {showAlert && (
         <div className="fixed top-6 left-1/2 -translate-x-1/2 z-50 bg-green-100 text-green-800 px-6 py-3 rounded-lg shadow-lg flex items-center gap-2 animate-fade-in-down">
           <CheckCircle className="w-5 h-5 text-green-600" />
-          <span className="font-medium">🛒 Added to cart successfully!</span>
+          <span className="font-medium">🛒 Buy successfully!</span>
         </div>
       )}
 
@@ -105,9 +105,7 @@ const OrderDetail = () => {
           </div>
 
           <p className="text-gray-600 text-sm leading-relaxed">
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum
-            at lacus congue, suscipit elit nec, tincidunt orci. Phasellus
-            egestas nisi vitae lectus imperdiet venenatis.
+            Have good product and hight Quality!
           </p>
 
           {/* Color selection */}
@@ -133,7 +131,7 @@ const OrderDetail = () => {
           <div>
             <h4 className="text-sm font-semibold mb-2">Size</h4>
             <div className="flex gap-3">
-              {["S", "M", "L"].map((s) => (
+              {["20", "14", "12"].map((s) => (
                 <button
                   key={s}
                   onClick={() => setSelectedSize(s)}
@@ -178,14 +176,6 @@ const OrderDetail = () => {
               className="bg-pink-700 hover:bg-pink-800 text-white flex-1 flex items-center justify-center gap-2"
             >
               <ShoppingCart className="w-4 h-4" />
-              Add to Cart
-            </Button>
-            <Button
-              onClick={handleBuyNow}
-              variant="outline"
-              className="flex-1 border-pink-700 text-pink-700 hover:bg-pink-50 flex items-center justify-center gap-2"
-            >
-              <Zap className="w-4 h-4" />
               Buy Now
             </Button>
             <Button variant="outline" size="icon" className="border-gray-300">

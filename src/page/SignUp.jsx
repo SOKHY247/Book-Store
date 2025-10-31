@@ -114,6 +114,7 @@ export default function SignUp() {
           <p className="mt-4 text-center text-green-400">{message}</p>
         )}
       </div>
+      
     </div>
   );
 }

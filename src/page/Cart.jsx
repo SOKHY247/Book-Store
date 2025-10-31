@@ -37,7 +37,7 @@ const Cart = () => {
                 Size
               </th>
               <th className="px-4 py-2 border-b border-gray-300 dark:border-gray-700">
-                Color
+                
               </th>
               <th className="px-4 py-2 border-b border-gray-300 dark:border-gray-700">
                 Price
