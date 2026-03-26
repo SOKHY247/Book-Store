@@ -88,7 +88,7 @@ const Cart = () => {
                 <td className="px-4 py-2 border-b border-gray-300 dark:border-gray-700">
                   <button
                     onClick={() => removeFromCart(item.id)}
-                    className="bg-red-500 hover:bg-red-600 text-white px-3 py-1 rounded"
+                    className="bg-red-500 hover:bg-red-600 text-white px-3 py-1 rounded cursor-pointer"
                   >
                     Remove
                   </button>
