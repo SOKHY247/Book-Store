@@ -5,7 +5,7 @@ import SideBar from "./SideBar";
 import { useContext, useEffect, useState } from "react";
 import ThemeContext from "@/context/ThemeContext";
 import { Moon, Sun } from "lucide-react";
-import Home from "@/page/Home";
+
 
 const NavBar = () => {
   const { theme, toggleTheme } = useContext(ThemeContext);
@@ -43,6 +43,7 @@ const NavBar = () => {
     >
       <div className="max-w-7xl mx-auto flex justify-between items-center p-2">
         {/* Logo */}
+        <Link to="/">
         <div className="flex gap-2 items-center">
           <img
             src="logobookstore.jpg"
@@ -51,6 +52,7 @@ const NavBar = () => {
           />
           <h1 className="hidden md:block font-bold text-2xl">MyBookshop</h1>
         </div>
+        </Link>
 
         {/* Links */}
         <div className="hidden lg:flex gap-6 text-lg font-semibold">

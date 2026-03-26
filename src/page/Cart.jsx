@@ -1,18 +1,25 @@
 import { useContext } from "react";
 import CartContext from "@/context/CartContext";
+import { Button } from "antd";
+import { useNavigate } from "react-router-dom";
 
 
 
 
 const Cart = () => {
   const { cart, removeFromCart, getTotal } = useContext(CartContext);
+  const navigate = useNavigate();
  
   if (cart.length === 0) {
     return (
-      
-      <p className="text-center py-12 font-semibold text-xl mt-5">
+      <div className="ml-20 items-center flex mt-20 gap-5 justify-evenly">
+        <Button onClick={() => navigate(-1)} variant="outline" className="mb-6">
+        ← Back
+       </Button>
+      <p className="text-center flex items-center mr-30 ">
         Your cart is empty.
       </p>
+       </div>
     );
   }
 
@@ -20,6 +27,9 @@ const Cart = () => {
     
     <div className="max-w-7xl mx-auto p-4 mt-10">
        <h1 className="text-3xl font-semibold tracking-tight text-center">Order Total : </h1>
+       <Button onClick={() => navigate(-1)} variant="outline" className="mb-6">
+        ← Back
+       </Button>
       <div className="overflow-x-auto">
         <table className="w-full text-left border-collapse border border-gray-300 dark:border-gray-700">
           <thead className="bg-gray-200 dark:bg-gray-800">
@@ -88,7 +98,6 @@ const Cart = () => {
           </tbody>
         </table>
       </div>
-
       <h3 className="mt-4 text-right text-lg font-semibold">
         Total: ${getTotal().toFixed(2)}
       </h3>

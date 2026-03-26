@@ -26,10 +26,10 @@ const OrderDetail = () => {
     setTimeout(() => setShowAlert(false), 2500); // hide after 2.5s
   };
 
-  const handleBuyNow = () => {
-    setShowAlert(true);
-    setTimeout(() => setShowAlert(false), 2500);
-  };
+  // const handleBuyNow = () => {
+  //   setShowAlert(true);
+  //   setTimeout(() => setShowAlert(false), 2500);
+  // };
 
   return (
     <div className="relative max-w-6xl mx-auto py-10 px-4 mt-5">
@@ -41,7 +41,7 @@ const OrderDetail = () => {
         </div>
       )}
 
-      <Button onClick={() => navigate(-1)} variant="outline" className="mb-6">
+      <Button onClick={() => navigate(-1)} variant="outline" className="mb-6 cursor-pointer">
         ← Back
       </Button>
 
@@ -173,7 +173,7 @@ const OrderDetail = () => {
           <div className="flex items-center gap-4 pt-4">
             <Button
               onClick={handleAddToCart}
-              className="bg-pink-700 hover:bg-pink-800 text-white flex-1 flex items-center justify-center gap-2"
+              className="bg-pink-700 hover:bg-pink-800 text-white flex-1 flex items-center justify-center gap-2 cursor-pointer"
             >
               <ShoppingCart className="w-4 h-4" />
               Buy Now

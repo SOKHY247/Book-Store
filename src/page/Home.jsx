@@ -1,16 +1,11 @@
 import React, { useState, useEffect } from "react";
-import { Carousel } from "flowbite";
-import { ShoppingCart } from "lucide-react";
 import { Link } from "react-router-dom";
-// import SignIn from "./FormSign-in";
-// import SignUp from "./SignUp";
-import { FaChevronLeft, FaChevronRight } from "react-icons/fa";
 import Bestsellers from "./Bestsellers";
-import { GalleryWithTab } from "./GalleryWithTab";
 
 
 const Home = () => {
   // 🧩 Carousel logic must be inside the component
+  
   const slides = [
    "https://i.ytimg.com/vi/OXaga3JVdR8/hq720.jpg?sqp=-oaymwEhCK4FEIIDSFryq4qpAxMIARUAAAAAGAElAADIQj0AgKJD&rs=AOn4CLA3gZ1Ckwiv5EOcfyfAO8p9b56x_w",
     "https://substackcdn.com/image/fetch/$s_!3r1T!,f_auto,q_auto:good,fl_progressive:steep/https%3A%2F%2Fsubstack-post-media.s3.amazonaws.com%2Fpublic%2Fimages%2Faf71eaf8-a0c2-490b-839e-4c927e6097a6_787x609.png",
@@ -18,13 +13,13 @@ const Home = () => {
     "https://media.licdn.com/dms/image/v2/D4D12AQGaeZwKxSukNA/article-cover_image-shrink_720_1280/article-cover_image-shrink_720_1280/0/1716326374277?e=2147483647&v=beta&t=QrETvsuPc-vm9Fbry51m_jT86NV_5EXTfq0Qqie8MTY",
     "https://thedayspring.com.pk/wp-content/uploads/2022/10/The-7-Habits-of-Highly-Effective-Teens-Book-Reviewy.jpg",
   ];
-   const images = [
-    "https://ng.jumia.is/unsafe/fit-in/500x500/filters:fill(white)/product/58/2912541/1.jpg?6999",
-    "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSDe9pxqWuvZVOV5CPT2RFnHc3QylPSmBw80Q&s",
-    "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQLhhPrJp2O1bSBVoiBa5wAn_zF4ySADYSOoQ&s",
-    "https://assets.penguinrandomhouse.com/wp-content/uploads/2022/02/01152036/PRH-What-to-Read-After-Atomic-Habits-1200x628-mobile-header.jpg",
-    "https://romangorge.com/wp-content/uploads/2022/03/Colorful-Vintage-Library-Furniture-Animated-Illustration-Book-Report-Education-Presentation-1-e1648298374112.png",
-  ];
+  //  const images = [
+  //   "https://ng.jumia.is/unsafe/fit-in/500x500/filters:fill(white)/product/58/2912541/1.jpg?6999",
+  //   "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSDe9pxqWuvZVOV5CPT2RFnHc3QylPSmBw80Q&s",
+  //   "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQLhhPrJp2O1bSBVoiBa5wAn_zF4ySADYSOoQ&s",
+  //   "https://assets.penguinrandomhouse.com/wp-content/uploads/2022/02/01152036/PRH-What-to-Read-After-Atomic-Habits-1200x628-mobile-header.jpg",
+  //   "https://romangorge.com/wp-content/uploads/2022/03/Colorful-Vintage-Library-Furniture-Animated-Illustration-Book-Report-Education-Presentation-1-e1648298374112.png",
+  // ];
 
   const [index, setIndex] = useState(0);
   const total = slides.length;
@@ -38,112 +33,112 @@ const Home = () => {
   }, []);
 
   
-  const products = [
-    {
-      id: 1,
-      name: "Classic Denim Jacket",
-      price: "$89",
-      image: "https://www.bookmarked.id/cdn/shop/files/FollowYourHeartNEW_1024x.jpg?v=1718024604"
-    },
-    {
-      id: 2,
-      name: "Cotton Oversized Tee",
-      price: "$39",
-      image:
-        "https://is1-ssl.mzstatic.com/image/thumb/Publication69/v4/72/e0/44/72e044d9-aec9-5846-611d-9ad63e2533b3/15078-SEA-Being-Happy_-COVER-A-1.jpg/1200x675wz.jpg",
-    },
-    {
-      id: 3,
-      name: "Slim Fit Chinos",
-      price: "$59",
-      image:
-        "https://is1-ssl.mzstatic.com/image/thumb/Publication118/v4/e0/87/80/e08780bb-a838-c1d5-f08c-1166128eae76/9781848504066.jpg/1200x900wz.jpg",
-    },
-    {
-      id: 3,
-      name: "Slim Fit Chinos",
-      price: "$59",
-      image:
-        "https://is1-ssl.mzstatic.com/image/thumb/Publication4/v4/7b/32/09/7b32099f-708b-a755-a9eb-91c0048c2bcc/cover.jpg/1200x630wz.png",
-    },
+  // const products = [
+  //   {
+  //     id: 1,
+  //     name: "Classic Denim Jacket",
+  //     price: "$89",
+  //     image: "https://www.bookmarked.id/cdn/shop/files/FollowYourHeartNEW_1024x.jpg?v=1718024604"
+  //   },
+  //   {
+  //     id: 2,
+  //     name: "Cotton Oversized Tee",
+  //     price: "$39",
+  //     image:
+  //       "https://is1-ssl.mzstatic.com/image/thumb/Publication69/v4/72/e0/44/72e044d9-aec9-5846-611d-9ad63e2533b3/15078-SEA-Being-Happy_-COVER-A-1.jpg/1200x675wz.jpg",
+  //   },
+  //   {
+  //     id: 3,
+  //     name: "Slim Fit Chinos",
+  //     price: "$59",
+  //     image:
+  //       "https://is1-ssl.mzstatic.com/image/thumb/Publication118/v4/e0/87/80/e08780bb-a838-c1d5-f08c-1166128eae76/9781848504066.jpg/1200x900wz.jpg",
+  //   },
+  //   {
+  //     id: 3,
+  //     name: "Slim Fit Chinos",
+  //     price: "$59",
+  //     image:
+  //       "https://is1-ssl.mzstatic.com/image/thumb/Publication4/v4/7b/32/09/7b32099f-708b-a755-a9eb-91c0048c2bcc/cover.jpg/1200x630wz.png",
+  //   },
     
-  ];
+  // ];
   
 
-  const [categories, setCategories] = useState([
-  {
-    id: 1,
-    name: "Men",
-    category: "Clothing",
-    price: 49.99,
-    quantity: 10,
-    image: "https://chessline.in/wp-content/uploads/2024/04/29-04-202404313-___-KONICA-scaled.jpg",
-    date: "2025-10-29T10:00:00Z",
-  },
-  {
-    id: 2,
-    name: "Women",
-    category: "Clothing",
-    price: 59.99,
-    quantity: 15,
-    image: "https://images.ctfassets.net/wkwo8cyw934s/6lHfDL3oQVe7lITE1vKtIM/2e7ca47621b99e0f3a0c79366a75e4d1/WK10_2025-PLP-CATEGORY-WOMEN-Hoodies.jpg",
-    date: "2025-10-28T10:00:00Z",
-  },
-  {
-    id: 3,
-    name: "Accessories",
-    category: "Accessories",
-    price: 19.99,
-    quantity: 20,
-    image: "https://img.freepik.com/premium-photo/concept-product-categories-clothing-accessories-white-background_268321-4577.jpg",
-    date: "2025-10-27T10:00:00Z",
-  },
-  {
-    id: 4,
-    name: "Accessories",
-    category: "Accessories",
-    price: 24.99,
-    quantity: 8,
-    image: "https://img.freepik.com/premium-photo/concept-product-categories-clothing-accessories-white-background_268321-4577.jpg",
-    date: "2025-10-26T10:00:00Z",
-  },
-  {
-    id: 5,
-    name: "Accessories",
-    category: "Accessories",
-    price: 29.99,
-    quantity: 5,
-    image: "https://img.freepik.com/premium-photo/concept-product-categories-clothing-accessories-white-background_268321-4577.jpg",
-    date: "2025-10-25T10:00:00Z",
-  },
-  {
-    id: 6,
-    name: "Accessories",
-    category: "Accessories",
-    price: 34.99,
-    quantity: 12,
-    image: "https://img.freepik.com/premium-photo/concept-product-categories-clothing-accessories-white-background_268321-4577.jpg",
-    date: "2025-10-24T10:00:00Z",
-  },
-  {
-    id: 7,
-    name: "Accessories",
-    category: "Accessories",
-    price: 39.99,
-    quantity: 7,
-    image: "https://img.freepik.com/premium-photo/concept-product-categories-clothing-accessories-white-background_268321-4577.jpg",
-    date: "2025-10-23T10:00:00Z",
-  },
-  {
-    id: 8,
-    name: "Accessories",
-    category: "Accessories",
-    price: 44.99,
-    quantity: 3,
-    image: "https://img.freepik.com/premium-photo/concept-product-categories-clothing-accessories-white-background_268321-4577.jpg",
-    date: "2025-10-22T10:00:00Z",
-  },
-]);
+//   const [categories, setCategories] = useState([
+//   {
+//     id: 1,
+//     name: "Men",
+//     category: "Clothing",
+//     price: 49.99,
+//     quantity: 10,
+//     image: "https://chessline.in/wp-content/uploads/2024/04/29-04-202404313-___-KONICA-scaled.jpg",
+//     date: "2025-10-29T10:00:00Z",
+//   },
+//   {
+//     id: 2,
+//     name: "Women",
+//     category: "Clothing",
+//     price: 59.99,
+//     quantity: 15,
+//     image: "https://images.ctfassets.net/wkwo8cyw934s/6lHfDL3oQVe7lITE1vKtIM/2e7ca47621b99e0f3a0c79366a75e4d1/WK10_2025-PLP-CATEGORY-WOMEN-Hoodies.jpg",
+//     date: "2025-10-28T10:00:00Z",
+//   },
+//   {
+//     id: 3,
+//     name: "Accessories",
+//     category: "Accessories",
+//     price: 19.99,
+//     quantity: 20,
+//     image: "https://img.freepik.com/premium-photo/concept-product-categories-clothing-accessories-white-background_268321-4577.jpg",
+//     date: "2025-10-27T10:00:00Z",
+//   },
+//   {
+//     id: 4,
+//     name: "Accessories",
+//     category: "Accessories",
+//     price: 24.99,
+//     quantity: 8,
+//     image: "https://img.freepik.com/premium-photo/concept-product-categories-clothing-accessories-white-background_268321-4577.jpg",
+//     date: "2025-10-26T10:00:00Z",
+//   },
+//   {
+//     id: 5,
+//     name: "Accessories",
+//     category: "Accessories",
+//     price: 29.99,
+//     quantity: 5,
+//     image: "https://img.freepik.com/premium-photo/concept-product-categories-clothing-accessories-white-background_268321-4577.jpg",
+//     date: "2025-10-25T10:00:00Z",
+//   },
+//   {
+//     id: 6,
+//     name: "Accessories",
+//     category: "Accessories",
+//     price: 34.99,
+//     quantity: 12,
+//     image: "https://img.freepik.com/premium-photo/concept-product-categories-clothing-accessories-white-background_268321-4577.jpg",
+//     date: "2025-10-24T10:00:00Z",
+//   },
+//   {
+//     id: 7,
+//     name: "Accessories",
+//     category: "Accessories",
+//     price: 39.99,
+//     quantity: 7,
+//     image: "https://img.freepik.com/premium-photo/concept-product-categories-clothing-accessories-white-background_268321-4577.jpg",
+//     date: "2025-10-23T10:00:00Z",
+//   },
+//   {
+//     id: 8,
+//     name: "Accessories",
+//     category: "Accessories",
+//     price: 44.99,
+//     quantity: 3,
+//     image: "https://img.freepik.com/premium-photo/concept-product-categories-clothing-accessories-white-background_268321-4577.jpg",
+//     date: "2025-10-22T10:00:00Z",
+//   },
+// ]);
 
   
   // Move MV
@@ -301,13 +296,13 @@ const testimonials = [
  return (
     <div className="min-h-screen bg-background text-foreground transition-colors">
       {/* 🖼️ Carousel Section */}
-      <div className="relative w-full overflow-hidden rounded-lg h-56 md:h-96">
+      <div className="relative overflow-hidden md:h-96 mt-14 max-w-full mx-auto flex  ">
         {slides.map((src, i) => (
           <img
             key={i}
             src={src}
             alt={`Slide ${i + 1}`}
-            className={`absolute inset-0 w-full h-full object-cover transition-opacity duration-700 ease-in-out ${
+            className={`absolute inset-0 h-full w-full  object-cover transition-opacity duration-800 ease-in-out  ${
               i === index ? "opacity-100" : "opacity-0"
             }`}
           />

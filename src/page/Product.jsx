@@ -1,7 +1,6 @@
 import React, { useContext } from "react";
 import ProductContext from "@/context/ProductContext";
 import { ShoppingCart } from "lucide-react";
-import OrderDetails from "./OrderDetail";
 import { Link } from "react-router-dom";
 import {
   Card,
@@ -13,30 +12,32 @@ import {
 } from "@/components/ui/card";
 import { Button } from "@/components/ui/button";
 import CartContext from "@/context/CartContext";
+import { message } from "antd";
 
 const Product = () => {
   const { products } = useContext(ProductContext);
   const { addToCart } = useContext(CartContext);
 
+  const handleAddToCart = (productId) => {
+    addToCart(productId);
+    message.success("Added to cart successfully!");
+  };
+
   return (
     <div className="max-w-7xl mx-auto py-10 px-4 space-y-8 mt-5">
       <h1 className="text-3xl font-semibold tracking-tight">Products</h1>
-
-       
-
- <Link to="/">
-      <button className="bg-transparent hover:bg-blue-500 text-blue-700 font-semibold hover:text-white py-2 px-4 border border-blue-500 hover:border-transparent rounded">
-      All Book
-      </button>
-    </Link>
-
-     <Link to="/orderhistory">
-      <button className="bg-transparent hover:bg-blue-500 text-blue-700 font-semibold hover:text-white py-2 px-4 border border-blue-500 hover:border-transparent rounded">
-       Order History
-      </button>
-    </Link>
-
-
+      <div className="flex gap-2">
+        <Link to="/orderhistory">
+          <span className="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded">
+            Order History
+          </span>
+        </Link>
+        <Link to="/cart">
+          <span className="bg-green-500 hover:bg-green-700 text-white font-bold py-2 px-4 rounded">
+            Total order
+          </span>
+        </Link>
+      </div>
       <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-4 md:gap-6 mt-4">
         {products.map((product, index) => (
           <Card
@@ -62,7 +63,7 @@ const Product = () => {
               </CardDescription>
 
               <ul className="flex flex-wrap gap-1 text-xs text-muted-foreground">
-                {product.size.map((s, idx) => (
+                {product.size?.map((s, idx) => (
                   <li
                     key={idx}
                     className="border rounded-md px-2 py-0.5 bg-muted"
@@ -76,18 +77,19 @@ const Product = () => {
             </CardContent>
 
             <CardFooter>
-              <Button
-                variant="default"
-                size="sm"
-                onClick={() => addToCart(product.id)}
-                className="w-full flex items-center gap-2 cursor-pointer"
-              >
-                <ShoppingCart className="w-4 h-4" />
-                Add to Cart
-              </Button>
+              <div className="flex items-cente w-full">
+                <Button
+                  variant="default"
+                  size="sm"
+                  onClick={() => handleAddToCart(product.id)}
+                  className="flex items-center cursor-pointer w-full"
+                >
+                  <ShoppingCart className="w-4 h-4" />
+                  Add to Cart
+                </Button>
+              </div>
             </CardFooter>
           </Card>
-        
         ))}
       </div>
     </div>
